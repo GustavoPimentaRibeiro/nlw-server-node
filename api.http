@@ -2,7 +2,25 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Unite Summit",
-    "details": "Um evento para quem é apaixonado por programação",
-    "maximumAttendees": 100
+    "title": "Novo evento 2",
+    "details": null,
+    "maximumAttendees": 1
 }
+
+###
+
+POST http://localhost:3333/events/aab989ca-fa98-405b-be4c-86d03ff87925/attendees
+Content-Type: application/json
+
+{
+    "name": "Gustavo Pimenta",
+    "email": "gustavo.pimenta.ribeiro2@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/aab989ca-fa98-405b-be4c-86d03ff87925
+
+###
+
+GET http://localhost:3333/attendees/4/badge
