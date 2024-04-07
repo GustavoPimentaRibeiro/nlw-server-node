@@ -23,4 +23,12 @@ GET http://localhost:3333/events/aab989ca-fa98-405b-be4c-86d03ff87925
 
 ###
 
-GET http://localhost:3333/attendees/4/badge
+GET http://localhost:3333/attendees/1/badge
+
+###
+
+GET http://localhost:3333/attendees/1/check-in
+
+###
+
+GET http://localhost:3333/events/d4108635-13b3-415f-a60d-cb58408cd863/attendees?query=gustavo
